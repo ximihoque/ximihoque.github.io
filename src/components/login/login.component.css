@@ -1,0 +1,29 @@
+.background {
+    background-image: url("../../assets/wall.png");
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+.login-card {
+    /* background:radial-gradient(ellipse, #1B5A71, #0E2D39); */
+    margin-left: 10%;
+    border-radius: 25px;
+    background: #EFF7F8;
+    height: 80%;
+    width: 25%;
+    box-shadow: -10px 30px 50px 0px rgba(28,29,29,1);
+    margin-top: 5%
+}
+.login-card-text {
+    color: #484848;
+    font-family : 'Avenir Light' ;
+}
+.login-card-body {
+    text-align: center;
+    margin: 40% 15% !important;
+}
+
+/* .form{
+    background: white;
+} */
+

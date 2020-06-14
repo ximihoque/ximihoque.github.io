@@ -1,6 +1,7 @@
 .background {
-    background-image: url("../../assets/wall.png");
     height: 100%;
+    background-image: url("../../assets/wall.png");
+    background-size: 100% 100%;
     display: flex;
     /* justify-content: center; */
 }

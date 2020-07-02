@@ -1,0 +1,151 @@
+.profileContainer{
+    width: 100%;
+    height: 100vh;
+    padding: 1.6rem;
+}
+
+.profileImg{
+    position: relative;
+}
+
+.profileContainer .profileImg{
+    width: 100%;
+    height: 100%;
+}
+
+.profileImg .mainProfile{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*  */
+
+.profileImg .profileDesc{
+    position: absolute;
+    background-color: #e3e1e1db;
+    bottom: 0;
+    height: 40%;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.profileDesc p, .profileDesc h3{
+    max-width: 900px;
+    margin: auto;
+}
+
+.profileDesc p, .profileDesc h3{
+    margin: 0 auto 1rem auto;
+}
+
+.profileDesc h3{
+    color: #271450;
+    font-size: 2rem;
+}
+
+.profileDesc p{
+    color: #271450;
+    font-size: 1.2rem;
+}
+.heart{
+    width: 3rem;
+    margin-top: 1rem;
+    transform: translateY(1rem);
+    animation: 2s heartbeat linear infinite;
+}
+
+/*  */
+.profileCollage{
+    width: 100%;
+    height: 100vh;
+    padding: 1.6rem;
+    position: relative;
+}
+
+.profilePics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    width: calc(100% - 3.2rem);
+    height: calc(100% - 3.2rem);
+}
+
+.profilePics img{
+width: 75%;
+}
+
+.profilePics .picDiv1{
+ margin: 2rem;
+ align-self: flex-start;
+ justify-self: left;
+}
+.profilePics .picDiv2{
+ margin: 1rem;
+ align-self: center;
+ justify-self: center;
+}
+.profilePics .picDiv3{
+ margin: 3rem 2rem;
+ text-align: right;
+ align-self: flex-end;
+ justify-self: flex-end;
+}
+
+.picDiv1 h3{
+font-size: 1.6rem;
+color: white;
+}
+
+.picDiv1 .para1{
+    line-height: 0;
+    color: #d7d5d5;
+
+}
+
+.picDiv1 .para2{
+    line-height: 0;
+    color: #d7d5d5;
+}
+
+.picDiv1 .para3{
+    color: #d7d5d5;
+}
+
+.profileCollageBackground{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: calc(100% - 3.2rem);
+    height: calc(100% - 3.2rem);
+}
+
+
+.profileCollageBackground .dark{
+    background: linear-gradient(#373e57,#7b7d86);
+}
+
+.profileCollageBackground .light{
+    background-color: #f2f2f4;
+}
+
+
+@keyframes heartbeat {
+    
+    0%{
+        width: 3rem;
+    }
+    50%{
+        width: 3.5rem;
+    }
+    100%{
+        width: 3rem;
+    }
+
+  }

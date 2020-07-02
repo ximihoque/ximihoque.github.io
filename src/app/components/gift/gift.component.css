@@ -1,0 +1,81 @@
+.giftContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.slotContainer{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.slotContainer .spinBtn{
+    background-color: #5173ff;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.9rem 3rem;
+    outline: none;
+}
+
+.slotContainer h3{
+    color: #271450;
+    font-size: 2rem;
+}
+
+.giftContainer p{
+    color: #271450;
+    font-size: 1.4rem;
+}
+
+.slotMachineWrapper{
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+.slotMachine{
+    border: 2px solid #b2c0d6;
+    margin: 0 1rem;
+    padding: 1.8rem 0.8rem;
+    border-radius: 5rem;
+}
+
+.slotIcon{
+    width: 5rem;
+}
+
+.gift{
+    width: 3rem;
+    margin-top: 1rem;
+    transform: translateY(1rem);
+}
+
+
+.footer{
+    text-align: center;
+    height: 5rem;
+    background-color: #f2f7ff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    font-size: 1rem;
+    color: #271450;
+}
+
+.footer img{
+    width: 2rem;
+    transform: translateY(45%);
+    margin: auto 1rem;
+}
+
+.bold{
+    font-weight: 800;
+}

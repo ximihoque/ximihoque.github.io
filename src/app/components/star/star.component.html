@@ -1,0 +1,20 @@
+<section class="starcontainer">
+
+  <div class="party">
+    <h3>Let's get started with the party</h3>
+    <h3>Shall We?</h3>
+  </div>
+
+  <ng-container *ngFor="let star of stars">
+    <img src="../../../assets/star.png" alt="star" class="star"
+      [ngStyle]="{'left': star.left, 'top':star.top, 'width':star.size}">
+  </ng-container>
+
+  <img src="../../../assets//rocket.png" alt="rocket" class="rocket" (click)="goRocket()"
+    [ngClass]="{'rocketRun':runRocket}">
+
+  <img src="../../../assets//heart.png" alt="heart" class="heart" (click)="goRocket()"
+    [ngClass]="{'heartCome':runRocket}">
+
+
+</section>

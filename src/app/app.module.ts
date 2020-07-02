@@ -14,6 +14,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { GiftComponent } from './components/gift/gift.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { VideoComponent } from './components/video/video.component';
+import { StarComponent } from './components/star/star.component';
+import { CakeComponent } from './components/cake/cake.component';
+import { CandleComponent } from './components/candle/candle.component';
 
 
 
@@ -23,7 +29,13 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [
     AppComponent,
     LoginComponent,
-    LandingComponent
+    LandingComponent,
+    GiftComponent,
+    ProfileComponent,
+    VideoComponent,
+    StarComponent,
+    CakeComponent,
+    CandleComponent
   ],
   imports: [
     BrowserModule,

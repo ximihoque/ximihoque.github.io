@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -97,6 +97,17 @@ export class StarComponent implements OnInit {
   goRocket() {
     this.runRocket = true;
   }
+
+  // 
+  // 
+
+  showId;
+
+  show(id) {
+    this.showId = id;
+    console.log(this.showId);
+  }
+
 
   constructor() { }
 

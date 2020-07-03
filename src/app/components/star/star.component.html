@@ -5,15 +5,22 @@
     <h3>Shall We?</h3>
   </div>
 
-  <ng-container *ngFor="let star of stars">
-    <img src="../../../assets/star.png" alt="star" class="star"
+  <ng-container *ngFor="let star of stars; index as i">
+    <img src="../../../assets/star.png" alt="star" class="star" id={{i}} (click)="show(i)"
       [ngStyle]="{'left': star.left, 'top':star.top, 'width':star.size}">
+    <div class="card rightDisplay" [ngStyle]="{'left': star.left, 'top':star.top}" *ngIf="showId == i "
+      [ngClass]="{'leftDisplay': i == 4 || i == 10 || i == 15 }">
+      <img src="../../../assets/cakeBackground.jpeg" alt="">
+      <p class="heading">some text</p>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eveniet quidem culpa!</p>
+    </div>
   </ng-container>
 
-  <img src="../../../assets//rocket.png" alt="rocket" class="rocket" (click)="goRocket()"
+
+  <img src="../../../assets/rocket.png" alt="rocket" class="rocket" (click)="goRocket()"
     [ngClass]="{'rocketRun':runRocket}">
 
-  <img src="../../../assets//heart.png" alt="heart" class="heart" (click)="goRocket()"
+  <img src="../../../assets/shootingStar.png" alt="heart" class="heart" (click)="goRocket()"
     [ngClass]="{'heartCome':runRocket}">
 
 

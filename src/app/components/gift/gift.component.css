@@ -17,8 +17,8 @@
     color: white;
     font-size: 1.4rem;
     border: none;
-    border-radius: 2rem;
-    padding: 0.9rem 3rem;
+    border-radius: 3rem;
+    padding: 1.9rem 3rem;
     outline: none;
 }
 
@@ -41,12 +41,12 @@
 .slotMachine{
     border: 2px solid #b2c0d6;
     margin: 0 1rem;
-    padding: 1.8rem 0.8rem;
+    padding: 2.6rem 1.6rem;
     border-radius: 5rem;
 }
 
 .slotIcon{
-    width: 5rem;
+    width: 5.6rem;
 }
 
 .gift{

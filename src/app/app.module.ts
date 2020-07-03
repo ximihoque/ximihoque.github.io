@@ -20,6 +20,8 @@ import { VideoComponent } from './components/video/video.component';
 import { StarComponent } from './components/star/star.component';
 import { CakeComponent } from './components/cake/cake.component';
 import { CandleComponent } from './components/candle/candle.component';
+import { CampfireComponent } from './components/campfire/campfire.component';
+import { FireComponent } from './components/fire/fire.component';
 
 
 
@@ -35,7 +37,9 @@ import { CandleComponent } from './components/candle/candle.component';
     VideoComponent,
     StarComponent,
     CakeComponent,
-    CandleComponent
+    CandleComponent,
+    CampfireComponent,
+    FireComponent
   ],
   imports: [
     BrowserModule,

@@ -10,9 +10,13 @@
       [ngStyle]="{'left': star.left, 'top':star.top, 'width':star.size}">
     <div class="card rightDisplay" [ngStyle]="{'left': star.left, 'top':star.top}" *ngIf="showId == i "
       [ngClass]="{'leftDisplay': i == 4 || i == 10 || i == 15 }">
+
+
       <img src="../../../assets/cakeBackground.jpeg" alt="">
-      <p class="heading">some text</p>
-      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eveniet quidem culpa!</p>
+      <p class="heading">{{star.caption}}</p>
+      <p class="para">{{star.message}}</p>
+
+
     </div>
   </ng-container>
 

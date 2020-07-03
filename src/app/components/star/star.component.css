@@ -136,7 +136,7 @@ transform: scale(1);
 }
 
 .rightDisplay::before{
-    content: url('../../../assets/beatRight.png');
+    content: url('../../../assets/beatleft.png');
     left: -6.7rem;
     position: absolute;
     top: 0.1rem;
@@ -150,7 +150,7 @@ transform: scale(1);
 }
 
 .leftDisplay::before{
-    content: url('../../../assets/beatleft.png');
+    content: url('../../../assets/beatRight.png');
     left: 11rem;
     position: absolute;
     top: 0.1rem;

@@ -25,9 +25,9 @@
 
 .profileImg .profileDesc{
     position: absolute;
-    background-color: #e3e1e1db;
+    background-color:rgb(255, 255, 255, 0.5);
     bottom: 0;
-    height: 34%;
+    height: 35%;
     text-align: center;
     width: 100%;
     
@@ -39,7 +39,7 @@
 }
 
 .profileDesc p, .profileDesc h3{
-    margin: 0 auto 1rem auto;
+    margin: 2rem auto 1rem auto;
 }
 
 .profileDesc h3{
@@ -50,6 +50,7 @@
 .profileDesc p{
     color: #271450;
     font-size: 1.2rem;
+    font-family: Avenir Light;
 }
 .heart{
     width: 3rem;

@@ -1,8 +1,9 @@
 .videoContainer{
     width: 100%;
-    height: calc(100vh + 2rem);
+    height: calc(100vh + 10rem);
     background-color: #1a1f32;
-    padding: 0.5rem 2rem;
+    padding: 2rem;
+    margin: 2rem 0;
 }
 
 .videoWrapper{
@@ -16,7 +17,7 @@
 .videoWrapper h3{
     font-size: 2rem;
     color: white;
-    margin: 1.5rem;
+    margin: 2.5rem auto 0.5rem auto;
 }
 
 .videoWrapper p{

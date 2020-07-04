@@ -8,15 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CampfireComponent implements OnInit {
 
   @Input('party') party;
-  flame: boolean = true;
+  // flame: boolean = true;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.party);
   }
 
-  toggleFlame() {
-    this.flame = !this.flame;
-  }
+  // toggleFlame() {
+  //   this.flame = !this.flame;
+  // }
 
 }

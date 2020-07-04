@@ -35,18 +35,18 @@
 .slotMachineWrapper{
     display: flex;
     justify-content: center;
-    margin: 4rem auto;
+    margin: 2rem auto;
 }
 
 .slotMachine{
     border: 2px solid #b2c0d6;
     margin: 0 1rem;
-    padding: 2.6rem 1.6rem;
-    border-radius: 5rem;
+    padding: 3.6rem 2.6rem;
+    border-radius: 7rem;
 }
 
 .slotIcon{
-    width: 5.6rem;
+    width: 6.6rem;
 }
 
 .gift{

@@ -22,6 +22,7 @@ import { CakeComponent } from './components/cake/cake.component';
 import { CandleComponent } from './components/candle/candle.component';
 import { CampfireComponent } from './components/campfire/campfire.component';
 import { FireComponent } from './components/fire/fire.component';
+import { FireworkComponent } from './components/firework/firework.component';
 
 
 
@@ -39,7 +40,8 @@ import { FireComponent } from './components/fire/fire.component';
     CakeComponent,
     CandleComponent,
     CampfireComponent,
-    FireComponent
+    FireComponent,
+    FireworkComponent
   ],
   imports: [
     BrowserModule,

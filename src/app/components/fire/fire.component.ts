@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FireComponent implements OnInit {
 
+
+  party = false;
+
+  startParty() {
+    console.log(this.party);
+    this.party = true;
+    console.log(this.party);
+
+  }
+
   constructor() { }
 
   ngOnInit() {

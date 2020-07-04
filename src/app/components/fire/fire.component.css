@@ -1,15 +1,35 @@
 .fireContainer{
-    width: 100%;
-    height: calc(100vh + 2rem);
+    width: calc(100% - 4rem);
+    height: calc(100vh + 10rem);
     background-color: #518baf;
     text-align: center;
     position: relative;
+    margin: 2rem auto;
+  }
+  .party{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 3rem;
+    cursor: pointer;
+    z-index: 111;
   }
 
+.strip{
+  background-color: white;
+  opacity: 0.3;
+  width: 100%;
+  height: 16rem;
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 .fireContainer h3{
-    font-size: 1.6rem;
-    top: 1rem;
-    right: 2rem;
+    font-size: 2rem;
+    top: 2rem;
+    right: 5rem;
     position: absolute;
     color: white;
     font-weight: lighter;
@@ -38,7 +58,7 @@ margin: auto;
 
   .star1 .starImg{
       width: 1.6rem;
-      margin-top: 6rem;
+      margin-top: 11rem;
      
   }
   .star2 .starImg{
@@ -47,11 +67,11 @@ margin: auto;
   }
   .star3 .starImg{
       width: 1.6rem;
-      margin-top: 2rem;
+      margin-top: 9rem;
   }
   .star4 .starImg{
       width: 1.6rem;
-      margin-top: 6rem;
+      margin-top: 15rem;
   }
 
   .card{
@@ -129,3 +149,4 @@ margin: auto;
       .flip-card-back {
         transform: rotateY(180deg);
       }
+

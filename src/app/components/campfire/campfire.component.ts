@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-campfire',
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CampfireComponent implements OnInit {
 
+  @Input('party') party;
   flame: boolean = true;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.party);
   }
 
   toggleFlame() {

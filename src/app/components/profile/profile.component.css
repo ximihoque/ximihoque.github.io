@@ -1,7 +1,7 @@
 .profileContainer{
     width: 100%;
-    height: 100vh;
-    padding: 1.6rem;
+    height: clac(100vh + 5rem);
+    padding: 2rem;
 }
 
 .profileImg{
@@ -27,7 +27,7 @@
     position: absolute;
     background-color: #e3e1e1db;
     bottom: 0;
-    height: 40%;
+    height: 34%;
     text-align: center;
     width: 100%;
     

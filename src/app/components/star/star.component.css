@@ -48,13 +48,16 @@
     background-color: white;
     max-width: 11rem;
     border-radius: 3px;
+    border: 1px solid #5454ff;
     z-index: 9;
     text-align: center;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 .card img{
     width: 9rem;
     border-radius: 3px;
-    height: 10rem;
+    min-height: 10rem;
+    border-radius: 4px;
 }
 
 /* .card::before{
@@ -66,7 +69,7 @@
 } */
 
 .card .heading{
-    font-size: 1.4rem;
+    font-size: 15px;
     margin: 0.5rem auto;
     text-align: left;
 }
@@ -76,7 +79,10 @@
     margin-top: 0;
     text-align: left;
     color: #a8a8a8;
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    max-height: 4rem;
+    overflow: auto;
 }
 
 .rocket{
@@ -216,4 +222,6 @@ transform: scale(1);
     color: #a8a8a8;
     font-size: 14px;
     margin-top: 0;
+    max-height: 4rem;
+    overflow: auto;
 }

@@ -12,7 +12,7 @@
     <div class="cardBg rightDisplay" [ngStyle]="{'left': star.left, 'top':star.top}" *ngIf="showId == i "
       [ngClass]="{'leftDisplay': i == 7 || i == 2 || i == 23 || i == 5 || i == 28 || i == 6 || i == 1 || i == 3 || i == 18 || i == 17 || i == 7 }">
       <div class="card">
-        <img src="../../../assets/cakeBackground.jpeg" id="img{{i}}" alt="" (dblclick)="showPreview(ref)" #ref>
+        <img src={{star.imgage}} id="img{{i}}" alt="" (dblclick)="showPreview(ref)" #ref>
         <p class="heading">{{star.caption}}</p>
         <p class="para">{{star.message}}</p>
 

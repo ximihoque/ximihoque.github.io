@@ -31,8 +31,19 @@
 
 } */
 
-.card{
+.cardBg{
     position: absolute;
+    z-index: 9;
+    background-color: #ffffff3d;
+    padding: 1rem;
+    width: auto;
+    transform: rotate(4deg);
+    border-radius: 2rem;
+}
+
+
+.card{
+    transform: rotate(-4deg);
     padding: 0.5rem;
     background-color: white;
     max-width: 11rem;
@@ -144,10 +155,11 @@ transform: scale(1);
 }
 
 .rightDisplay::before{
+    transform: rotate(-4deg);
     content: url('../../../assets/beatleft.png');
-    left: -6.7rem;
+    left: -6.9rem;
     position: absolute;
-    top: 0.1rem;
+    top: 13px;
     width: 1.6rem;
     z-index: -1;
 }
@@ -158,10 +170,11 @@ transform: scale(1);
 }
 
 .leftDisplay::before{
+    transform: rotate(-4deg);
     content: url('../../../assets/beatRight.png');
     left: 10rem;
     position: absolute;
-    top: 0.1rem;
+    top: 11px;
     width: 1.6rem;
     z-index: -1;
 }

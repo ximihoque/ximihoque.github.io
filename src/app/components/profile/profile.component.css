@@ -1,6 +1,6 @@
 .profileContainer{
     width: 100%;
-    height: clac(100vh + 5rem);
+    height: clac(100vh + 15rem);
     padding: 2rem;
 }
 
@@ -62,7 +62,7 @@
 /*  */
 .profileCollage{
     width: 100%;
-    height: calc(100vh + 10rem);
+    height: calc(100vh + 18rem);
     padding: 1.6rem;
     position: relative;
 }
@@ -79,11 +79,11 @@
 }
 
 .profilePics img{
-width: 100%;
+width: 105%;
 }
 
 .profilePics .picDiv1{
- margin: 2rem;
+ margin: 2rem 3.5rem;
  align-self: flex-start;
  justify-self: left;
 }
@@ -92,6 +92,15 @@ width: 100%;
  align-self: center;
  justify-self: center;
 }
+.picDiv2 img{
+margin-top: 1rem;
+border-radius: 2rem;
+}
+.picDiv3 img{
+margin-top: 20rem;
+border-radius: 2rem;
+}
+
 .profilePics .picDiv3{
  margin: 3rem 2rem;
  text-align: right;
@@ -121,21 +130,23 @@ margin-top: 2.3rem;
 }
 
 .profileCollageBackground{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
+    background-color: #d9be64;
+    clip-path: polygon(1% 99%, 1% 1%, 52% 67%, 58% 10%, 100% 100%);
     width: calc(100% - 3.2rem);
     height: calc(100% - 3.2rem);
 }
 
 
-.profileCollageBackground .dark{
-    background: linear-gradient(#373e57,#7b7d86);
+/* .profileCollageBackground .dark{
+    background-color: #d9be64;
+    clip-path: polygon(0 1%, 0% 100%, 100% 100%);
+
 }
 
 .profileCollageBackground .light{
-    background-color: #f2f2f4;
-}
+    background-color: #d9be64;
+    clip-path: polygon(17% 7%, 0% 100%, 100% 100%);
+} */
 
 
 @keyframes heartbeat {

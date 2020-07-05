@@ -44,7 +44,8 @@
       <img class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="flip-card">
-        <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null }">
+        <div class="flip-card-inner"
+          [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '0.5s' : null }">
           <div class="flip-card-front">
             <div class="cardfront card">
               <div>
@@ -69,7 +70,8 @@
       <img class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="flip-card">
-        <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null }">
+        <div class="flip-card-inner"
+          [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '1s' : null }">
           <div class="flip-card-front">
             <div class="cardfront card">
               <div>
@@ -94,7 +96,8 @@
       <img class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="flip-card">
-        <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null }">
+        <div class="flip-card-inner"
+          [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '1.5s' : null }">
           <div class="flip-card-front">
             <div class="cardfront card">
               <div>
@@ -118,5 +121,7 @@
   </div>
 
   <app-firework *ngIf="party==true"></app-firework>
+
+
   <app-campfire [party]="party"></app-campfire>
 </section>

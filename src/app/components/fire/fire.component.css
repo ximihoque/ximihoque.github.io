@@ -107,6 +107,16 @@ margin: auto;
       margin-top: 15rem;
   }
 
+  .cardBg{
+    position: relative;
+    z-index: 9;
+    background-color: #ffffff3d;
+    padding: 1rem;
+    width: auto;
+    transform: rotate(4deg);
+    border-radius: 2rem;
+}
+
   .card{
     padding: 0.5rem;
     background-color: white;
@@ -180,3 +190,15 @@ margin: auto;
         transform: rotateY(180deg);
       }
 
+      .flip1{
+        animation: 1s flip1 linear;
+      }
+
+      @keyframes flip1{
+        0%{
+          transform: rotateY(0deg);
+        }
+        100%{
+          transform: rotateY(180deg);
+        }
+      }

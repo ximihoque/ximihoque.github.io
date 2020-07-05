@@ -132,7 +132,7 @@ margin-top: 2.3rem;
 }
 
 .profileCollageBackground{
-    background-color: #d9be64;
+    background-color: #d3be7a;
     clip-path: polygon(1% 99%, 1% 1%, 52% 67%, 58% 10%, 100% 100%);
     width: calc(100% - 3.2rem);
     height: calc(100% - 3.2rem);
@@ -163,4 +163,11 @@ margin-top: 2.3rem;
         width: 3rem;
     }
 
+  }
+
+  .profileCollage::after{
+        content: url('../../../assets/unnamed.png');
+        position: absolute;
+        bottom: -11%;
+        left: 13rem;
   }

@@ -17,6 +17,8 @@ export class GiftComponent implements OnInit {
   ngOnInit() {
   }
 
+  showGift = false;
+
   spin() {
 
     const imagesArray = ['../../../assets/pizza.png', '../../../assets/popcorn.png', '../../../assets/strawberry.png', '../../../assets/scrolling.gif', '../../../assets/scrolling2.gif']
@@ -31,7 +33,7 @@ export class GiftComponent implements OnInit {
 
     if ((r1 == r2) && (r1 == r3)) {
       setTimeout(() => {
-        alert("gift");
+        this.showGift = true;
       }, 2100);
     }
 

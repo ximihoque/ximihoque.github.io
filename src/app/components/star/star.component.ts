@@ -12,7 +12,7 @@ export class StarComponent implements OnInit {
       left: "53%",
       top: "12%",
       size: "0.7rem",
-      imgage: "../../../assests/",
+      imgage: "../../../assets/cakeBackground.jpeg",
       caption: "caption here",
       message: "some message here"
     },
@@ -241,6 +241,26 @@ export class StarComponent implements OnInit {
       message: "some message here8"
     },
   ]
+
+
+  preview = false;
+  imgSrc = "";
+
+  hidePreview() {
+    this.preview = false;
+  }
+
+  showPreview(ref) {
+    var id = ref.id;
+    id = id.replace('img', '');
+    id = id * 1;
+
+    this.imgSrc = this.stars[id].imgage;
+    console.log(this.imgSrc);
+    this.preview = true;
+
+
+  }
 
   runRocket = false;
 

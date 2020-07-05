@@ -117,17 +117,18 @@ margin-top: 2.3rem;
 
 .picDiv1 .para1{
     line-height: 1;
-    color: #d7d5d5;
+    color: #504c4c;
 
 }
 
 .picDiv1 .para2{
     line-height: 0;
-    color: #d7d5d5;
+    color: #504c4c;
 }
 
 .picDiv1 .para3{
-    color: #d7d5d5;
+    color: #504c4c;
+    margin-top: 2rem;
 }
 
 .profileCollageBackground{

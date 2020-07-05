@@ -193,8 +193,35 @@ margin: auto;
         display: flex;
         border-radius: 2rem;   
         margin-left: 3rem;  
+        -webkit-transform: rotate(4deg) translatez(0);
+        transform: rotate(4deg) translatez(0);
+        -webkit-transform-origin: 50%  51%;
+        transform-style: preserve-3d;
+      }
+      .cardBg1{
+        background-color: #ffffff3d;;
+        padding: 1.6rem 0;
+        max-width: 14rem;
+        min-height: 23.5rem;
+        justify-content: center;
+        display: flex;
+        border-radius: 2rem;   
+        margin-left: 3rem;  
+        -webkit-transform: rotate(-4deg) translatez(0);
+        transform: rotate(-4deg) translatez(0);
+        -webkit-transform-origin: 50%  51%;
+        transform-style: preserve-3d;
       }
 
       .cardBg .flip-card{
         transform-style: preserve-3d;
+        -webkit-transform: rotate(-4deg) translatez(0);
+        transform: rotate(-4deg) translatez(0);
+        -webkit-transform-origin: 50%  51%;
+      }
+      .cardBg1 .flip-card{
+        transform-style: preserve-3d;
+        -webkit-transform: rotate(4deg) translatez(0);
+        transform: rotate(4deg) translatez(0);
+        -webkit-transform-origin: 50%  51%;
       }

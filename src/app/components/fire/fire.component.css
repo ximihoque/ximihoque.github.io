@@ -1,19 +1,28 @@
 .fireContainer{
     width: calc(100% - 4rem);
     height: calc(100vh + 10rem);
-    background-color: #518baf;
+    background: radial-gradient(#550d39, #270537);
     text-align: center;
     position: relative;
     margin: 2rem auto;
   }
+
   .party{
     position: absolute;
     top: 2rem;
     left: 2rem;
-    width: 3rem;
     cursor: pointer;
     z-index: 111;
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffff3b;
+    border-radius: 50%;
+
   }
+  .party img{
+        width: 2rem;
+        margin-top: 1rem;
+    }
 
 .strip{
   background-color: white;
@@ -26,13 +35,37 @@
   z-index: 1;
 }
 
-.fireContainer h3{
+.message{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  text-align: left;
+  margin: 0;
+  line-height: 0.7;
+  display: flex;
+  padding: 0.5rem 2rem;
+}
+
+.message h3{
     font-size: 2rem;
-    top: 2rem;
-    right: 5rem;
-    position: absolute;
-    color: white;
+    color: rgba(0, 0, 0, 0.64);
     font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+
+.message img{
+  width: 2.6rem;
+  align-self: flex-start;
+  margin-right: 1rem;
+  margin-top: 2px;
+}
+
+.message p{
+  font-size: 14px;
+  color: #6d9ebc;
 }
 
   .cardContainer{

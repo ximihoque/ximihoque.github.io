@@ -12,13 +12,14 @@
 }
 .campfire {
   position: absolute;
-  width: 600px;
-  height: 600px;
-  -webkit-transform-origin: center center;
+  width: 599px;
+  height: 502px;
   transform-origin: center center;
-  -webkit-transform: scale(0.75);
-  transform: scale(0.75);
+  transform: scale(0.6);
   bottom: -8%;
+  background: #ffffff0f;
+  border-radius: 6rem;
+  left: -4%;
 }
 .log {
   position: absolute;

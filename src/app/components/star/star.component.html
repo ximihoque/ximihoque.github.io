@@ -8,20 +8,16 @@
   <ng-container *ngFor="let star of stars; index as i">
     <img src="../../../assets/star.png" alt="star" class="star" id={{i}} (click)="show(i)"
       [ngStyle]="{'left': star.left, 'top':star.top, 'width':star.size}">
-
-    <div class="cardBackground">
-      <div class="card rightDisplay" [ngStyle]="{'left': star.left, 'top':star.top}" *ngIf="showId == i "
-        [ngClass]="{'leftDisplay': i == 7 || i == 2 || i == 23 || i == 5 || i == 28 || i == 6 || i == 1 || i == 3 || i == 18 || i == 17 || i == 7 }">
+    <div class="card rightDisplay" [ngStyle]="{'left': star.left, 'top':star.top}" *ngIf="showId == i "
+      [ngClass]="{'leftDisplay': i == 7 || i == 2 || i == 23 || i == 5 || i == 28 || i == 6 || i == 1 || i == 3 || i == 18 || i == 17 || i == 7 }">
 
 
-        <img src="../../../assets/cakeBackground.jpeg" id="img{{i}}" alt="" (dblclick)="showPreview(ref)" #ref>
-        <p class="heading">{{star.caption}}</p>
-        <p class="para">{{star.message}}</p>
+      <img src="../../../assets/cakeBackground.jpeg" id="img{{i}}" alt="" (dblclick)="showPreview(ref)" #ref>
+      <p class="heading">{{star.caption}}</p>
+      <p class="para">{{star.message}}</p>
 
 
-      </div>
     </div>
-
   </ng-container>
 
 

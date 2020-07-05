@@ -48,9 +48,9 @@
 }
 
 .profileDesc p{
-    color: #271450;
+    color: #271450bf;
     font-size: 1.2rem;
-    font-family: Avenir Light;
+    letter-spacing: 1px;
 }
 .heart{
     width: 3rem;

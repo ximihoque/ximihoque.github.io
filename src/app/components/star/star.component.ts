@@ -245,6 +245,8 @@ export class StarComponent implements OnInit {
 
   preview = false;
   imgSrc = "";
+  caption = "";
+  message = "";
 
   hidePreview() {
     this.preview = false;
@@ -256,7 +258,9 @@ export class StarComponent implements OnInit {
     id = id * 1;
 
     this.imgSrc = this.stars[id].imgage;
-    console.log(this.imgSrc);
+    this.caption = this.stars[id].caption;
+    this.message = this.stars[id].message;
+
     this.preview = true;
 
 

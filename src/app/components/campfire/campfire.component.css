@@ -17,7 +17,7 @@
   transform-origin: center center;
   transform: scale(0.6);
   bottom: -8%;
-  background: #ffffff0f;
+  /* background: #ffffff0f; */
   border-radius: 6rem;
   left: -4%;
 }

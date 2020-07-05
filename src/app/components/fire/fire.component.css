@@ -91,33 +91,22 @@ margin: auto;
 
   .star1 .starImg{
       width: 1.6rem;
-      margin-top: 11rem;
-     
+      margin-top: 1rem;     
   }
   .star2 .starImg{
       width: 1.6rem;
-      margin-top: 2rem;
+      margin-top: 6rem;
   }
   .star3 .starImg{
       width: 1.6rem;
-      margin-top: 9rem;
+      margin-top: 15rem;
   }
   .star4 .starImg{
       width: 1.6rem;
-      margin-top: 15rem;
+      margin-top: 23rem;
   }
 
-  .cardBg{
-    position: relative;
-    z-index: 9;
-    background-color: #ffffff3d;
-    padding: 1rem;
-    width: auto;
-    transform: rotate(4deg);
-    border-radius: 2rem;
-}
-
-  .card{
+    .card{
     padding: 0.5rem;
     background-color: white;
     max-width: 11rem;
@@ -188,17 +177,4 @@ margin: auto;
       
       .flip-card-back {
         transform: rotateY(180deg);
-      }
-
-      .flip1{
-        animation: 1s flip1 linear;
-      }
-
-      @keyframes flip1{
-        0%{
-          transform: rotateY(0deg);
-        }
-        100%{
-          transform: rotateY(180deg);
-        }
       }

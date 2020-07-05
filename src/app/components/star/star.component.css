@@ -172,9 +172,9 @@ transform: scale(1);
 .leftDisplay::before{
     transform: rotate(-4deg);
     content: url('../../../assets/beatRight.png');
-    left: 10rem;
+    left: 9.5rem;
     position: absolute;
-    top: 11px;
+    top: -2px;
     width: 1.6rem;
     z-index: -1;
 }

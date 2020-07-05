@@ -99,11 +99,11 @@ margin: auto;
   }
   .star3 .starImg{
       width: 1.6rem;
-      margin-top: 15rem;
+      margin-top: 12rem;
   }
   .star4 .starImg{
       width: 1.6rem;
-      margin-top: 23rem;
+      margin-top: 18rem;
   }
 
     .card{
@@ -113,6 +113,7 @@ margin: auto;
     border-radius: 3px;
     z-index: 9;
     margin: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
     .card img{
         width: 10rem;
@@ -123,14 +124,18 @@ margin: auto;
     .card .heading{
         font-size: 1.4rem;
         margin: 0.5rem auto;
+        text-align: left;
     }
 
     .card .para{
         margin-top: 0;
+        font-size: 14px;
+        color: gray;
+        text-align: left;
     }
 
     .cardfront{
-        min-height: 250px;
+        min-height: 300px;
         display: grid;
         align-content: center;
     }
@@ -177,4 +182,19 @@ margin: auto;
       
       .flip-card-back {
         transform: rotateY(180deg);
+      }
+
+      .cardBg{
+        background-color: #ffffff3d;;
+        padding: 1.6rem 0;
+        max-width: 14rem;
+        min-height: 23.5rem;
+        justify-content: center;
+        display: flex;
+        border-radius: 2rem;   
+        margin-left: 3rem;  
+      }
+
+      .cardBg .flip-card{
+        transform-style: preserve-3d;
       }

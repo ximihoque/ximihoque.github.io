@@ -121,7 +121,7 @@ margin: auto;
 }
     .card img{
         width: 9rem;
-        border-radius: 3px;
+        border-radius: 12px;
         height: 10rem;
         object-fit: cover;
     }

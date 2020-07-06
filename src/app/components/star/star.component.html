@@ -23,8 +23,11 @@
       </div>
 
       <div class="card">
-        <img src={{star.imgage}} id="img{{i}}" alt="" (dblclick)="showPreview(ref)" #ref>
-        <p class="heading">{{star.caption}}</p>
+        <img src={{star.imgage}} id="img{{i}}" alt="" class="photo" (dblclick)="showPreview(ref)" #ref>
+        <div style="display: flex;">
+          <p class="heading">{{star.caption}}</p>
+          <img id="3" class="camera" src="../../../assets/pin.png" alt="">
+        </div>
         <p class="para">{{star.message}}</p>
 
 

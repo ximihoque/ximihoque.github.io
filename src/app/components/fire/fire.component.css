@@ -1,5 +1,6 @@
 .fireContainer{
-    width: calc(100% - 4rem);
+    /* width: calc(100% - 4rem); */
+    width: 100%;
     height: calc(100vh + 10rem);
     background: radial-gradient(#550d39, #270537);
     text-align: center;
@@ -41,6 +42,7 @@
   right: 2rem;
   background-color: white;
   border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   text-align: left;
   margin: 0;
   line-height: 0.7;
@@ -72,13 +74,15 @@
 
   .cardContainer{
       position: absolute;
-      width: 100%;
+      width: 70%;
+      margin-left: auto;
       height: auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-content: center;
       z-index: 9;
       cursor: pointer;
+      right: 10%;
   }
 
   .star .beat{
@@ -111,7 +115,7 @@ margin: auto;
     .card{
     padding: 0.5rem;
     background-color: white;
-    max-width: 11rem;
+    max-width: 12.2rem;
     border-radius: 3px;
     z-index: 9;
     margin: auto;
@@ -120,9 +124,9 @@ margin: auto;
     min-height: 18.8rem;
 }
     .card img{
-        width: 9rem;
+        width: 10.5rem;
         border-radius: 12px;
-        height: 10rem;
+        height: 11rem;
         object-fit: cover;
     }
 
@@ -199,7 +203,7 @@ margin: auto;
       .cardBg{
         background-color: #ffffff3d;;
         padding: 1.6rem 0;
-        max-width: 13rem;
+        max-width: 14.2rem;
         /* min-height: 23.5rem; */
         justify-content: center;
         display: flex;
@@ -213,7 +217,7 @@ margin: auto;
       .cardBg1{
         background-color: #ffffff3d;;
         padding: 1.6rem 0;
-        max-width: 13rem;
+        max-width: 14.2rem;
         /* min-height: 23.5rem; */
         justify-content: center;
         display: flex;

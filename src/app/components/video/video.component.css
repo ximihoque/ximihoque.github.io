@@ -4,6 +4,7 @@
     background-color: #f2f7ff;
     padding: 2rem;
     margin: 2rem 0;
+    position: relative;
 }
 
 .videoWrapper{
@@ -80,4 +81,13 @@
 }
 .navigateVideo img:hover{
     width: 6rem;
+}
+
+.next{
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%);
+    right: 3rem;
+    width: 2rem;
+    cursor: pointer;
 }

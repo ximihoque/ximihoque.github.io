@@ -19,7 +19,8 @@
 
       <div class="cardBg">
         <div class="flip-card">
-          <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null }">
+          <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null}"
+            [ngClass]="{'rotate1':rotate=='a'}">
 
             <div class="flip-card-front">
               <div class="cardfront card">
@@ -51,7 +52,8 @@
       <div class="cardBg1">
         <div class="flip-card">
           <div class="flip-card-inner"
-            [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '0.5s' : null }">
+            [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '0.5s' : null }"
+            [ngClass]="{'rotate1':rotate=='b'}">
             <div class="flip-card-front">
               <div class="cardfront card">
                 <img src="../../../assets/joker.png" alt="">
@@ -81,7 +83,8 @@
       <div class="cardBg">
         <div class="flip-card">
           <div class="flip-card-inner"
-            [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '1s' : null }">
+            [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '1s' : null }"
+            [ngClass]="{'rotate1':rotate=='c'}">
             <div class="flip-card-front">
               <div class="cardfront card">
                 <img src="../../../assets/joker.png" alt="">
@@ -110,8 +113,8 @@
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="cardBg1">
         <div class="flip-card">
-          <div class="flip-card-inner"
-            [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null, 'transition-delay':party == true ? '1.5s' : null }">
+          <div class="flip-card-inner" [ngStyle]="{'transform':party == true ? 'rotateY(180deg)' : null}"
+            [ngClass]="{'rotate1':rotate=='c'}">
             <div class="flip-card-front">
               <div class="cardfront card">
                 <img src="../../../assets/joker.png" alt="">

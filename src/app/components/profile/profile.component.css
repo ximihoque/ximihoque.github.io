@@ -165,9 +165,17 @@ margin-top: 2.3rem;
 
   }
 
-  .profileCollage::after{
+  /* .profileCollage::after{
         content: url('../../../assets/unnamed.png');
         position: absolute;
         bottom: -11%;
         left: 13rem;
+  } */
+
+  .unnamed{
+    position: absolute;
+    bottom: -5%;
+    left: 10rem;
+    width: 6rem;
+    z-index: -1;
   }

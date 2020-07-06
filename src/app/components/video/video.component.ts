@@ -14,7 +14,7 @@ export class VideoComponent implements OnInit {
     this.videoplayer.nativeElement.play();
   }
 
-  videoArray = ['https://www.youtube.com/embed/il_t1WVLNxk?controls=0&rel=0', 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&rel=0', 'https://www.youtube.com/embed/lJIrF4YjHfQ?controls=0&rel=0'];
+  videoArray = ['https://www.youtube.com/embed/1TTDR1mkWLY?controls=0&rel=0', 'https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&rel=0', 'https://www.youtube.com/embed/lJIrF4YjHfQ?controls=0&rel=0'];
   changeVideo(val) {
     this.video.nativeElement.src = this.videoArray[val];
   }

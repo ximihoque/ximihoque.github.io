@@ -38,7 +38,7 @@
 .message{
   position: absolute;
   top: 0;
-  right: 0;
+  right: 2rem;
   background-color: white;
   border-bottom-left-radius: 1rem;
   text-align: left;
@@ -240,10 +240,15 @@ margin: auto;
 
 
       .camera{
-        width: auto !important;
+        width: 1rem !important;
         height: auto !important;
         border: none !important;
         border-radius: 0px !important;
         margin-left: auto !important;
         margin-top: 1.1rem !important;
+      }
+
+      .rotate1{
+        transform: rotateY(-540deg) !important;
+        transition-delay: 1s;
       }

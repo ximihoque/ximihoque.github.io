@@ -53,6 +53,7 @@
     color: rgba(0, 0, 0, 0.64);
     font-weight: lighter;
     margin: 0;
+    margin-top: 0.7rem;
     padding: 0;
 }
 
@@ -60,7 +61,8 @@
   width: 2rem;
   align-self: flex-start;
   margin-right: 1rem;
-  margin-top: 2px;
+  /* margin-top: 2px; */
+  margin-top: 0.7rem;
 }
 
 .message p{
@@ -117,9 +119,9 @@ margin: auto;
     border: 1px solid #5454ff;
 }
     .card img{
-        width: 10rem;
+        width: 5rem;
         border-radius: 3px;
-        height: 11rem;
+        height: 7rem;
         object-fit: cover;
     }
 

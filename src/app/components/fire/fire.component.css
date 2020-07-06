@@ -199,8 +199,8 @@ margin: auto;
       .cardBg{
         background-color: #ffffff3d;;
         padding: 1.6rem 0;
-        max-width: 14rem;
-        min-height: 23.5rem;
+        max-width: 13rem;
+        /* min-height: 23.5rem; */
         justify-content: center;
         display: flex;
         border-radius: 2rem;   
@@ -213,8 +213,8 @@ margin: auto;
       .cardBg1{
         background-color: #ffffff3d;;
         padding: 1.6rem 0;
-        max-width: 14rem;
-        min-height: 23.5rem;
+        max-width: 13rem;
+        /* min-height: 23.5rem; */
         justify-content: center;
         display: flex;
         border-radius: 2rem;   

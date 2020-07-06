@@ -114,6 +114,7 @@ margin: auto;
     z-index: 9;
     margin: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    border: 1px solid #5454ff;
 }
     .card img{
         width: 10rem;

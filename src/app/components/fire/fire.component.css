@@ -13,15 +13,15 @@
     left: 2rem;
     cursor: pointer;
     z-index: 111;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: #ffffff3b;
     border-radius: 50%;
 
   }
   .party img{
-        width: 1rem;
-        margin-top: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.5rem;
     }
 
 .strip{
@@ -120,6 +120,7 @@ margin: auto;
         width: 10rem;
         border-radius: 3px;
         height: 11rem;
+        object-fit: cover;
     }
 
     .card .heading{

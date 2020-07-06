@@ -117,27 +117,33 @@ margin: auto;
     margin: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
     border: 1px solid #5454ff;
+    min-height: 18.8rem;
 }
     .card img{
-        width: 5rem;
+        width: 9rem;
         border-radius: 3px;
-        height: 7rem;
+        height: 10rem;
         object-fit: cover;
     }
 
+    .cardfront img{
+      height: 7rem;
+      width: 5rem;
+    }
+
     .card .heading{
-        font-size: 1.4rem;
-        margin: 0.5rem auto;
-        text-align: left;
+      font-size: 15px;
+      margin: 1rem auto 0.6rem auto;
+      text-align: left;
     }
 
     .card .para{
-        margin-top: 0;
-        font-size: 14px;
-        color: gray;
-        text-align: left;
-        max-height: 4rem;
-        overflow: auto;
+      margin-top: 0;
+      text-align: left;
+      color: #a8a8a8;
+      font-size: 11px;
+      max-height: 4rem;
+      overflow: auto;
     }
 
     .cardfront{

@@ -39,6 +39,8 @@
     width: auto;
     transform: rotate(4deg);
     border-radius: 2rem;
+    margin-left:7rem;
+    margin-top:-2rem;
 }
 
 
@@ -161,7 +163,7 @@ transform: scale(1);
 }
 }
 
-.rightDisplay::before{
+/* .rightDisplay::before{
     transform: rotate(-4deg);
     content: url('../../../assets/beatleft.png');
     left: -6.9rem;
@@ -174,9 +176,9 @@ transform: scale(1);
 .rightDisplay{
     margin-left: 8rem;
     margin-top: -1rem;
-}
+} */
 
-.leftDisplay::before{
+/* .leftDisplay::before{
     transform: rotate(-4deg);
     content: url('../../../assets/beatRight.png');
     left: 9.5rem;
@@ -184,11 +186,11 @@ transform: scale(1);
     top: -2px;
     width: 1.6rem;
     z-index: -1;
-}
+} */
 
 .leftDisplay{
-    margin-left: -17rem;
-    margin-top: -1rem;
+    margin-left: -20rem;
+margin-top: -3.8rem;
 }
 
 .preview{
@@ -227,3 +229,48 @@ transform: scale(1);
     max-height: 4rem;
     overflow: auto;
 }
+
+
+
+/*  */
+/*  */
+/*  */
+
+.loader{
+    position: absolute;
+    left: -5rem;
+    transform: rotate(-4deg);
+    top: 1.7rem;
+    width: 11rem;
+  }
+
+.loader1{
+    position: absolute;
+    left: 7rem;
+    transform: rotate(-4deg);
+    top: 2.3rem;
+    width: 11rem;
+  }
+  
+  svg {
+      height: 100%;
+      width: 100%;
+    }
+    path{
+      stroke: #fff;
+      stroke-width: 1px;
+      fill: none;
+      stroke-dasharray: 150, 200;
+      stroke-dashoffset: 0;
+      animation: pulse 4s infinite linear;
+  
+    }
+  
+  @keyframes pulse {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 1050;
+    }
+  }

@@ -205,10 +205,11 @@ margin-top: -3.8rem;
     border-radius: 3px;
     z-index: 9;
     text-align: center;
+    border-radius: 2rem;
 
 }
 
-.preview img{
+.preview .previewImage{
     width: 100%;
     height: 80%;
     margin: auto;
@@ -282,4 +283,12 @@ margin-top: -3.8rem;
     border-radius: 0px !important;
     margin-left: auto !important;
     margin-top: 1.1rem !important;
+  }
+
+  .cross{
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 2rem;
+      cursor: pointer;
   }

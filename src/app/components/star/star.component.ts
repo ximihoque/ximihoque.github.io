@@ -28,7 +28,7 @@ export class StarComponent implements OnInit {
       left: "91%",
       top: "32%",
       size: "0.7rem",
-      image: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883182/birthday/106115020_930226527404929_2510287695074466531_n_f9wtkc.jpg",
+      image: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883177/birthday/71951351_924434561359680_952802077364697167_n_qgf4hk.jpg",
       caption: "We Dare you",
       message: "Asking ways from creepy people when the it was almost the middle of night is our speciality but asking for a ride is next level."
     },
@@ -164,7 +164,7 @@ export class StarComponent implements OnInit {
       left: "62%",
       top: "48%",
       size: "1.3rem",
-      imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883182/birthday/106115020_930226527404929_2510287695074466531_n_f9wtkc.jpg",
+      image: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883182/birthday/106115020_930226527404929_2510287695074466531_n_f9wtkc.jpg",
       caption: "We Dare you",
       message: "Asking ways from creepy people when the it was almost the middle of night is our speciality but asking for a ride is next level."
     },
@@ -257,7 +257,7 @@ export class StarComponent implements OnInit {
     id = id.replace('img', '');
     id = id * 1;
 
-    this.imgSrc = this.stars[id].imgage;
+    this.imgSrc = this.stars[id].image;
     this.caption = this.stars[id].caption;
     this.message = this.stars[id].message;
 

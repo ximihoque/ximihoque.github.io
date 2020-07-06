@@ -26,7 +26,7 @@
         <img src={{star.image}} id="img{{i}}" alt="" class="photo" (dblclick)="showPreview(ref)" #ref>
         <div style="display: flex;">
           <p class="heading">{{star.caption}}</p>
-          <img id="3" class="camera" src="../../../assets/pin.png" alt="">
+          <img id="3" class="camera" src="../../../assets/pin.png" alt="" style="width:0.9rem !important">
         </div>
         <p class="para">{{star.message}}</p>
 
@@ -43,7 +43,8 @@
     [ngClass]="{'heartCome':runRocket}">
 
   <div class="preview" *ngIf="preview">
-    <img src={{imgSrc}} alt="" (dblclick)="hidePreview()">
+    <img src="../../../assets/close-24px.svg" alt="" class="cross" (click)="hidePreview()">
+    <img src={{imgSrc}} alt="" class="previewImage" (dblclick)="hidePreview()">
     <p class="caption">{{caption}}</p>
     <p class="message">{{message}}</p>
   </div>

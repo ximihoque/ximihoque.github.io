@@ -2,10 +2,11 @@
     /* width: calc(100% - 4rem); */
     width: 100%;
     height: calc(100vh + 10rem);
-    background: radial-gradient(#550d39, #270537);
+    background: url('../../../assets/group.png'), radial-gradient(#550d39, #270537); 
     text-align: center;
     position: relative;
     margin: 2rem auto;
+    background-size: cover;
   }
 
   .party{
@@ -135,7 +136,7 @@ margin: auto;
 
     .cardfront img{
       height: 7rem;
-      width: 5rem;
+      width: 7rem;
     }
 
     .card .heading{

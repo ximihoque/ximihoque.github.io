@@ -30,7 +30,9 @@
     border-radius: 3rem;
     padding: 1.9rem 4.5rem;
     outline: none;
+    position: relative;
 }
+
 
 .slotContainer h3{
     color: #271450;
@@ -225,3 +227,4 @@ animation: 1s shake linear;
   .winning p{
       font-size: 1rem;
   }
+

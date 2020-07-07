@@ -2,6 +2,7 @@
 
   <section class="giftContainer" [ngClass]="{'blur':showGift==true}">
 
+
     <div class="slotContainer">
 
       <h3>Let's get You A Gift <img src="../../../assets/gift.png" alt="" class="gift"></h3>
@@ -26,7 +27,8 @@
 
       </div>
 
-      <button class="spinBtn" (click)="spin()">Click to Spin!</button>
+      <button class="spinBtn" [disabled]="disabelBtn==true ? true : false" (click)="spin()"
+        [ngClass]="{'disabelBtn':disabelBtn==true}">Click to Spin!</button>
 
     </div>
 
@@ -44,18 +46,19 @@
         <img src="../../../assets/thinking.png" alt="">
       </div>
 
-      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur eum veritatis quibusdam
-        voluptatum facere
-        aliquid placeat voluptatibus fugiat animi eos, quisquam quae ipsum officiis, in exercitationem aut nostrum quos
-        totam rem deleniti. Ex quasi ullam quisquam dolores neque vero ut!
+      <p class="para">
+        {{
+          questionArray[selectedQuestion].question
+        }}
       </p>
 
       <div class="inputContainer">
-        <input type="text" placeholder="Enter your answer here">
+        <input type="text" placeholder="Enter your answer here" #f>
         <span class="placeholder">Think twice!</span>
       </div>
+      <img class="lock" src={{lockSrc[selectedLockImg]}} alt="" (click)="onSubmit(f)"
+        [ngClass]="{'shakelock':shakelock==true}">
 
-      <img class="lock" src="../../../assets/lock.png" alt="">
     </div>
 
     <div class="footer">

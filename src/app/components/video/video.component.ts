@@ -23,6 +23,11 @@ export class VideoComponent implements OnInit {
 
   }
 
+  light() {
+    // alert("light");
+  }
+
+
   ngOnInit() {
   }
 

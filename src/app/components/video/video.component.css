@@ -17,16 +17,16 @@
 
 .videoWrapper h3{
     font-size: 2rem;
-    color: #271450;
+    /* color: #271450; */
     margin: 2.5rem auto 0.5rem auto;
     text-align: left;
     margin-left: 13rem;
     margin-bottom: 1rem;
 }
 
-.videoWrapper p{
+/* .videoWrapper p{
     color: #271450;
-}
+} */
 
 .imageContainer{
     display: flex;
@@ -90,4 +90,15 @@
     right: 3rem;
     width: 2rem;
     cursor: pointer;
+}
+
+
+[data-aos="dark"] {
+    background-color: #f2f7ff;
+    color: #271450;
+  }
+
+[data-aos="dark"].aos-animate {
+    background-color: #030e16;
+    color: white;
 }

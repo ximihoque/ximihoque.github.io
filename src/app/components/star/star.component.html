@@ -1,4 +1,4 @@
-<section class="starcontainer">
+<section class="starcontainer" [ngClass]="{'blur':preview}">
 
   <div class="party">
     <h3>Let's get started with the party</h3>
@@ -44,7 +44,7 @@
     [ngClass]="{'heartCome':runRocket}">
 
   <div class="preview" *ngIf="preview">
-    <img src="../../../assets/close-24px.svg" alt="" class="cross" (click)="hidePreview()">
+    <span class="cross" (click)="hidePreview()">&times;</span>
     <img src={{imgSrc}} alt="" class="previewImage" (dblclick)="hidePreview()">
     <p class="caption">{{caption}}</p>
     <p class="message">{{message}}</p>

@@ -27,7 +27,7 @@
 
       </div>
 
-      <button class="spinBtn" [disabled]="disabelBtn==true ? true : false" (click)="spin()"
+      <button class="spinBtn" [disabled]="disabelBtn || spinning" (click)="spin()"
         [ngClass]="{'disabelBtn':disabelBtn==true}">
         <span *ngIf="!disabelBtn" [ngStyle]="{'visibility': spinning==true ? 'hidden':'visible'}">
           Click to Spin!

@@ -5,7 +5,7 @@ import { LoginComponent } from 'src/app/components/login/login.component';
 import { CandleComponent } from './components/candle/candle.component';
 
 const routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'candle', component: CandleComponent },

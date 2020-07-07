@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as speechCommands from '@tensorflow-models/speech-commands';
+// import * as speechCommands from '@tensorflow-models/speech-commands';
 @Component({
   selector: 'app-fire',
   templateUrl: './fire.component.html',
@@ -280,49 +280,49 @@ export class FireComponent implements OnInit {
 
   party = false;
 
-  async startListening() {
+  // async startListening() {
 
-    // When calling `create()`, you must provide the type of the audio input.
-    // The two available options are `BROWSER_FFT` and `SOFT_FFT`.
-    // - BROWSER_FFT uses the browser's native Fourier transform.
-    // - SOFT_FFT uses JavaScript implementations of Fourier transform
-    //   (not implemented yet).
-    let recognizer: speechCommands.SpeechCommandRecognizer;
+  //   // When calling `create()`, you must provide the type of the audio input.
+  //   // The two available options are `BROWSER_FFT` and `SOFT_FFT`.
+  //   // - BROWSER_FFT uses the browser's native Fourier transform.
+  //   // - SOFT_FFT uses JavaScript implementations of Fourier transform
+  //   //   (not implemented yet).
+  //   let recognizer: speechCommands.SpeechCommandRecognizer;
 
-    recognizer = speechCommands.create('BROWSER_FFT');
+  //   recognizer = speechCommands.create('BROWSER_FFT');
 
-    // Make sure that the underlying model and metadata are loaded via HTTPS
-    // requests.
-    await recognizer.ensureModelLoaded();
+  //   // Make sure that the underlying model and metadata are loaded via HTTPS
+  //   // requests.
+  //   await recognizer.ensureModelLoaded();
 
-    // See the array of words that the recognizer is trained to recognize.
-    console.log(recognizer.wordLabels());
+  //   // See the array of words that the recognizer is trained to recognize.
+  //   console.log(recognizer.wordLabels());
 
-    // `listen()` takes two arguments:
-    // 1. A callback function that is invoked anytime a word is recognized.
-    // 2. A configuration object with adjustable fields such a
-    //    - includeSpectrogram
-    //    - probabilityThreshold
-    //    - includeEmbedding
-    recognizer.listen(async (result: any) => {
-      // - result.scores contains the probability scores that correspond to
-      //   recognizer.wordLabels().
-      // - result.spectrogram contains the spectrogram of the recognized word.
-      console.log(result);
-    }, {
-      includeSpectrogram: true,
-      probabilityThreshold: 0.75
-    });
+  //   // `listen()` takes two arguments:
+  //   // 1. A callback function that is invoked anytime a word is recognized.
+  //   // 2. A configuration object with adjustable fields such a
+  //   //    - includeSpectrogram
+  //   //    - probabilityThreshold
+  //   //    - includeEmbedding
+  //   recognizer.listen(async (result: any) => {
+  //     // - result.scores contains the probability scores that correspond to
+  //     //   recognizer.wordLabels().
+  //     // - result.spectrogram contains the spectrogram of the recognized word.
+  //     console.log(result);
+  //   }, {
+  //     includeSpectrogram: true,
+  //     probabilityThreshold: 0.75
+  //   });
 
-    // Stop the recognition in 10 seconds.
-    setTimeout(() => recognizer.stopListening(), 10e3);
-  }
+  //   // Stop the recognition in 10 seconds.
+  //   setTimeout(() => recognizer.stopListening(), 10e3);
+  // }
 
   startParty() {
     console.log(this.party);
     this.party = true;
     console.log(this.party);
-    this.startListening();
+    // this.startListening();
 
   }
 

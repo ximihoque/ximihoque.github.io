@@ -60,6 +60,9 @@
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 .card .photo{
+    background: url('../../../assets/loading.png');
+    background-repeat: no-repeat;
+    background-position: center;
     width: 9rem;
     border-radius: 3px;
     height: 10rem;
@@ -89,6 +92,7 @@
     font-size: 11px;
     max-height: 4rem;
     overflow: auto;
+    color: gray;
     /* font-family: "Avenir Light"; */
 }
 
@@ -221,7 +225,7 @@ margin-top: -3.8rem;
     height: 80%;
     margin: auto;
     text-align: center;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .preview .caption{
@@ -297,10 +301,13 @@ margin-top: -3.8rem;
     top: -13px;
     right: -13px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 15px;
     color: #5454ff;
     background-color: white;
     border-radius: 50%;
     padding: 0 0.4rem;
     border: 1px solid #5454ff;
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
   }

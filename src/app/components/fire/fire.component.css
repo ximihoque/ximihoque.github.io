@@ -123,11 +123,14 @@ margin: auto;
     border: 1px solid #5454ff;
     min-height: 18.8rem;
 }
-    .card img{
+    .card img.photo{
         width: 10.5rem;
         border-radius: 12px;
         height: 11rem;
         object-fit: cover;
+        background: url('../../../assets/loading.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .cardfront img{

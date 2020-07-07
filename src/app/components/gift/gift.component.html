@@ -28,41 +28,73 @@
       </div>
 
       <button class="spinBtn" [disabled]="disabelBtn==true ? true : false" (click)="spin()"
-        [ngClass]="{'disabelBtn':disabelBtn==true}">Click to Spin!</button>
+        [ngClass]="{'disabelBtn':disabelBtn==true}">
+        <span *ngIf="!disabelBtn">
+          Click to Spin!
+        </span>
+        <span *ngIf="disabelBtn">
+          congratulations
+        </span>
+      </button>
+
+      <!-- <div class="winning">
+
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+
+      </div> -->
 
     </div>
 
     <div class="footer">
-      <p>Created with <img src="../../../assets//heart.png" alt=""> <span class="bold">@ Ximi Hoque</span></p>
+      <p>Creeping you forever with <img src="../../../assets//heart.png" alt=""></p>
     </div>
 
   </section>
 
   <section class="formContainer" *ngIf="showGift==true">
 
-    <div class="form">
+    <div class="form" [ngClass]="{'formSuccess':formSuccess==true}">
       <div class="heading">
-        <h3>Really?</h3>
-        <img src="../../../assets/thinking.png" alt="">
+        <h3 *ngIf="!formSuccess">Really?</h3>
+        <h3 *ngIf="formSuccess">
+          {{
+          answerArray[selectedAnswer].question
+          }}
+        </h3>
+        <img *ngIf="!formSuccess" src="../../../assets/thinking.png" alt="">
       </div>
 
-      <p class="para">
+      <p class="para" *ngIf="!formSuccess">
         {{
           questionArray[selectedQuestion].question
         }}
       </p>
+      <p class="para" *ngIf="formSuccess">
+        {{
+          answerArray[selectedAnswer].answer
+        }}
+      </p>
 
-      <div class="inputContainer">
-        <input type="text" placeholder="Enter your answer here" #f>
+
+      <div class="inputContainer" *ngIf="!formSuccess">
+        <input type="text" placeholder="Enter your answer here" #val (keyup.enter)="onSubmit()">
         <span class="placeholder">Think twice!</span>
       </div>
-      <img class="lock" src={{lockSrc[selectedLockImg]}} alt="" (click)="onSubmit(f)"
+
+      <img *ngIf="!formSuccess" class="lock" src="../../../assets/lock.png" alt="" (click)="onSubmit()"
         [ngClass]="{'shakelock':shakelock==true}">
+
+      <button *ngIf="formSuccess" (click)="hideGift()">
+        Proceed and Next &rarr;
+      </button>
 
     </div>
 
     <div class="footer">
-      <p>Created with <img src="../../../assets//heart.png" alt=""> <span class="bold">@ Ximi Hoque</span></p>
+      <p>Creeping you forever with <img src="../../../assets//heart.png" alt=""></p>
     </div>
 
   </section>

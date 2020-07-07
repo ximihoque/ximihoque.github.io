@@ -68,7 +68,7 @@
 
 .footer{
     text-align: center;
-    height: 5rem;
+    height: 4rem;
     background-color: #f2f7ff;
     position: absolute;
     bottom: 0;
@@ -81,7 +81,7 @@
 }
 
 .footer img{
-    width: 2rem;
+    width: 1.5rem;
     transform: translateY(45%);
     margin: auto 1rem;
 }
@@ -110,11 +110,34 @@
     border-radius: 2.4rem;
     padding: 3rem;
     box-shadow: -20px 20px 20px 0px rgba(0,0,0,0.2);
+    min-height: 39rem;
 }
+
+.formSuccess{
+    border: 1px solid #008864;
+    justify-content: center;
+    display: block;
+}
+
+.formSuccess button{
+    background-color: #408bb3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 4rem;
+}
+
 
 .form .heading{
     display: flex;
     justify-content: space-between;
+}
+
+.formSuccess .heading{
+    display: flex;
+    justify-content: center;
 }
 
 .form .heading h3{
@@ -128,6 +151,7 @@
 .form .heading img{
     align-self: center;
     width: 2rem;
+    margin-top: 2.5rem;
 }
 
 .form .para{
@@ -168,7 +192,7 @@
 }
 
 .disabelBtn{
-    background-color: #afbbee !important;
+    background-color: #008864 !important;
     cursor: not-allowed !important;
 }
 
@@ -189,3 +213,16 @@ animation: 1s shake linear;
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+
+
+  /* .winning{
+      position: absolute;
+      top: 2rem;
+      right: 4rem;
+  }
+
+  .winning input[type=checkbox],
+  .winning input[type=radio]{
+      width: 34px;
+  } */

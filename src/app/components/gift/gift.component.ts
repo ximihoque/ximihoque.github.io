@@ -10,6 +10,7 @@ export class GiftComponent implements OnInit {
   @ViewChild('pizza') pizza;
   @ViewChild('strawberry') strawberry;
   @ViewChild('popcorn') popcorn;
+  @ViewChild('val') val;
 
 
   questionArray = [
@@ -24,8 +25,21 @@ export class GiftComponent implements OnInit {
 
   ]
 
+  answerArray = [
+    {
+      question: "You did It!",
+      answer: "message1"
+    },
+    {
+      question: "Awesome!",
+      answer: "message2"
+    }
+
+  ]
+
 
   selectedQuestion = 0;
+  selectedAnswer = 0;
 
   constructor() { }
 
@@ -69,24 +83,29 @@ export class GiftComponent implements OnInit {
     }, 1800);
   }
 
-  lockSrc = ['../../../assets/lock.png', '../../../assets/star.png'];
   selectedLockImg = 0;
   shakelock = false;
+  formSuccess = false;
 
-  onSubmit(val) {
-    let ans = val.value;
+
+
+  hideGift() {
+    this.showGift = false;
+    this.formSuccess = false;
+    this.selectedAnswer = 1;
+  }
+
+  onSubmit() {
+
+    let ans = this.val.nativeElement.value;
+
 
     // First Question
     if (this.selectedQuestion == 0) {
       if (ans == this.questionArray[this.selectedQuestion].answer) {
 
-        this.selectedLockImg = 1;
-
-        setTimeout(() => {
-          this.showGift = false;
-          this.selectedQuestion = 1;
-          this.selectedLockImg = 0;
-        }, 5000);
+        this.formSuccess = true;
+        this.selectedQuestion = 1;
 
       }
       else {
@@ -99,12 +118,8 @@ export class GiftComponent implements OnInit {
     if (this.selectedQuestion == 1) {
       if (ans == this.questionArray[this.selectedQuestion].answer) {
 
-        this.selectedLockImg = 1;
-
-        setTimeout(() => {
-          this.showGift = false;
-          this.disabelBtn = true;
-        }, 5000);
+        this.formSuccess = true;
+        this.disabelBtn = true;
 
       }
       else {
@@ -113,6 +128,7 @@ export class GiftComponent implements OnInit {
       }
     }
   }
+
 
 
 

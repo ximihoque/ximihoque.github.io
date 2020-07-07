@@ -50,8 +50,11 @@ export class GiftComponent implements OnInit {
 
   disabelBtn = false;
 
+  spinning = false;
+
   spin() {
 
+    this.spinning = true;
     const imagesArray = ['../../../assets/pizza.png', '../../../assets/popcorn.png', '../../../assets/strawberry.png', '../../../assets/scrolling.gif', '../../../assets/scrolling2.gif']
 
     this.pizza.nativeElement.src = imagesArray[3];
@@ -76,6 +79,7 @@ export class GiftComponent implements OnInit {
 
     setTimeout(() => {
       this.popcorn.nativeElement.src = imagesArray[r2];
+      this.spinning = false;
     }, 2000);
 
     setTimeout(() => {

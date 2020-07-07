@@ -1,13 +1,14 @@
 <section class="fireContainer">
 
-  <div class="party" (click)="startParty()" class="party">
+  <!-- <div class="party" (click)="startParty()" class="party">
     <img src="../../../assets/party.png" alt="">
-  </div>
+  </div> -->
   <div class="message">
     <img src="../../../assets/shooting.png" alt="">
     <div>
-      <h3>Make a wish and "phook" do.</h3>
-      <p>If that doesn't work find pataka!</p>
+      <h3>Make a wish and <span (click)="startParty()" style="z-index: 9999;position: relative;cursor: pointer;">Click
+          here!</span></h3>
+      <p>Nothing exciting is gonna happen, but your wish may come true!</p>
     </div>
   </div>
 

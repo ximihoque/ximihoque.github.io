@@ -260,3 +260,23 @@ margin: auto;
         transform: rotateY(-540deg) !important;
         transition-delay: 1s;
       }
+
+
+
+
+      /*  */
+      /* Responsive */
+      /*  */
+
+
+      @media screen and (max-width: 1113px){
+
+        .cardContainer{
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .star4{
+          display: none;
+        }
+
+      }

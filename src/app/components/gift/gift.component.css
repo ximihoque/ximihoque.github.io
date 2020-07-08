@@ -121,6 +121,7 @@
     border: 1px solid #008864;
     justify-content: center;
     display: block;
+
 }
 
 .formSuccess button{
@@ -131,6 +132,7 @@
     font-size: 1rem;
     padding: 0.8rem 1.2rem;
     margin-top: 4rem;
+    cursor: pointer;
 }
 
 
@@ -163,13 +165,14 @@
     letter-spacing: 1px;
     line-height: 1.5;
     min-height: 10rem;
+    white-space: pre-line;
 }
 
 .inputContainer{
     width: 75%;
     margin: auto;
     text-align: left;
-    margin: 4rem auto;
+    margin: 3rem auto;
 
 }
 
@@ -265,4 +268,11 @@ animation: 1s shake linear;
       transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
       -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
+  }
+
+
+  .calling{
+    width: 100%;
+    border-radius: 2rem;
+    margin-top: -5rem;
   }

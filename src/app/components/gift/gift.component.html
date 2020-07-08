@@ -51,7 +51,9 @@
 
     <div class="form" [ngClass]="{'formSuccess':formSuccess==true}">
       <div class="heading">
-        <h3 *ngIf="!formSuccess">Really?</h3>
+        <h3 *ngIf="!formSuccess"> {{
+          questionArray[selectedQuestion].heading
+          }}</h3>
         <h3 *ngIf="formSuccess">
           {{
           answerArray[selectedAnswer].question
@@ -65,11 +67,19 @@
           questionArray[selectedQuestion].question
         }}
       </p>
-      <p class="para" *ngIf="formSuccess">
+      <p class="para" *ngIf="formSuccess"
+        [ngStyle]="{'color': selectedQuestion==2 && selectedAnswer==1 ? '#64359f' : null}">
         {{
           answerArray[selectedAnswer].answer
         }}
       </p>
+
+      <!-- {{selectedQuestion}}
+      {{selectedAnswer}} -->
+
+      <img src="../../../assets/calling.webp" alt="" *ngIf="selectedAnswer==1 && selectedQuestion==1" class="calling">
+      <img src="../../../assets/chocolate.png" alt="" style="margin-top: -4rem;"
+        *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling">
 
 
       <div class="inputContainer" *ngIf="!formSuccess">
@@ -80,8 +90,13 @@
       <img *ngIf="!formSuccess" class="lock" src="../../../assets/lock.png" alt="" (click)="onSubmit()"
         [ngClass]="{'shakelock':shakelock==true}">
 
-      <button *ngIf="formSuccess" (click)="hideGift()">
+      <button *ngIf="formSuccess && selectedQuestion!=2" (click)="hideGift()">
         Proceed and Next &rarr;
+      </button>
+
+      <button *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" (click)="hideGift1()"
+        style="background-color:  #64359f; margin-top: 3rem;">
+        Just give it to me 🍫
       </button>
 
     </div>

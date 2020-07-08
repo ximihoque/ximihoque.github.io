@@ -15,24 +15,26 @@ export class GiftComponent implements OnInit {
 
   questionArray = [
     {
-      question: "capital of punjab",
-      answer: "chandigarh"
+      heading: "Really?",
+      question: "You have entered a small treasure hunt game! \nMountains remind us of the irregular beautiful moments that we have in our life. \nOne can always gaze at the beauty from the top or from the lap of the valley. \nWhat is the mountain you last googled and is “beautiful to the power raised infinity”?",
+      answer: "hunza valley"
     },
     {
-      question: "capital of india",
-      answer: "delhi"
+      heading: "Last One!",
+      question: "What does Michael ask Pam to spread on his foot that he burned on a George Forman grill?",
+      answer: "butter"
     }
 
   ]
 
   answerArray = [
     {
-      question: "You did It!",
-      answer: "message1"
+      question: "Indeed!",
+      answer: "And thats how memories are made. \nWe may or may not see the hunza valley but sure mountains are getting close for us to visit!"
     },
     {
-      question: "Awesome!",
-      answer: "message2"
+      question: "That was sweet!",
+      answer: "Let's get you a treat for your lips and your family! \nEnjoy this delicious chocolate. You've earned it."
     }
 
   ]
@@ -94,14 +96,26 @@ export class GiftComponent implements OnInit {
 
 
   hideGift() {
-    this.showGift = false;
+    // this.showGift = false;
     this.formSuccess = false;
-    this.selectedAnswer = 1;
+    this.selectedAnswer = this.selectedAnswer + 1;
+    console.log("qestion", this.selectedQuestion);
+    console.log("answer", this.selectedAnswer);
+  }
+
+  hideGift1() {
+    this.showGift = false;
   }
 
   onSubmit() {
 
-    let ans = this.val.nativeElement.value;
+    let ans: String = this.val.nativeElement.value;
+
+    ans = ans.toLowerCase();
+    ans = ans.trim();
+
+
+
 
 
     // First Question
@@ -124,6 +138,7 @@ export class GiftComponent implements OnInit {
 
         this.formSuccess = true;
         this.disabelBtn = true;
+        this.selectedQuestion = 2;
 
       }
       else {

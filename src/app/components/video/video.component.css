@@ -102,3 +102,16 @@
     background-color: #030e16;
     color: white;
 }
+
+
+@media screen and (max-width: 1113px){
+
+    .videoSection{
+        width: 92%;
+        height: calc(80% - 8rem);
+    }
+    .videoWrapper p{
+        margin-top: 3rem;
+    }
+
+}

@@ -53,9 +53,11 @@ export class GiftComponent implements OnInit {
   disabelBtn = false;
 
   spinning = false;
+  counter = 0;
 
   spin() {
 
+    this.counter = this.counter + 1;
     this.spinning = true;
     const imagesArray = ['../../../assets/pizza.png', '../../../assets/popcorn.png', '../../../assets/strawberry.png', '../../../assets/scrolling.gif', '../../../assets/scrolling2.gif']
 
@@ -66,6 +68,10 @@ export class GiftComponent implements OnInit {
     let r1 = Math.floor(Math.random() * 3);
     let r2 = Math.floor(Math.random() * 3);
     let r3 = Math.floor(Math.random() * 3);
+
+    if (this.counter == 10) {
+      r1 = r2 = r3 = 1;
+    }
 
     if ((r1 == r2) && (r1 == r3)) {
 

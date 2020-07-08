@@ -235,7 +235,7 @@ margin-top: -3.8rem;
 }
 .preview .message{
     text-align: left;
-    color: #a8a8a8;
+    color: gray;
     font-size: 13px;
     margin-top: 0;
     max-height: 4rem;

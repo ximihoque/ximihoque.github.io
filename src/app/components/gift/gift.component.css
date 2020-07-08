@@ -138,7 +138,7 @@
     padding: 0.8rem 1.6rem;
     margin-top: 4rem;
     cursor: pointer;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -291,7 +291,7 @@ animation: 1s shake linear;
 
   .chocoText{
       color: #271450;
-      font-size: 12px;
+      font-size: 10px;
       margin-top: 2px;
       display: block;
       letter-spacing: 1px;

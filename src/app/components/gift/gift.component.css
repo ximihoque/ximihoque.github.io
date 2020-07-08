@@ -297,3 +297,35 @@ animation: 1s shake linear;
       letter-spacing: 1px;
       text-align: left;
   }
+
+
+  @media screen and (max-width: 1113px){
+  
+    .giftContainer p{
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .slotMachine{
+        padding: 2.6rem 1.6rem;
+    }
+
+    .slotIcon{
+        width: 5.6rem;
+    }
+
+    .spinBtn{
+        padding: 1.5rem 4.5rem !important;
+        font-size: 1.2rem !important;
+    }
+
+    .form{
+        max-width: 400px;
+    }
+
+    .formContainer .footer{
+        display: none;
+    }
+
+  }

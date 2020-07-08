@@ -620,3 +620,11 @@
     opacity: 0;
   }
 }
+
+
+@media screen and (max-width: 1113px){
+  .campfire{
+    left: -14%;
+    bottom: -14%;
+  }
+}

@@ -273,10 +273,23 @@ margin: auto;
 
         .cardContainer{
           grid-template-columns: 1fr 1fr 1fr;
+          width: 85%;
         }
 
         .star4{
           display: none;
+        }
+
+        .fireContainer{
+          height: 100vh;
+        }
+
+        .star2 .starImg{
+          margin-top: 5.5rem;
+        }
+
+        .star3 .starImg{
+          margin-top: 8rem;
         }
 
       }

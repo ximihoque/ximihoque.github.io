@@ -179,3 +179,68 @@ margin-top: 2.3rem;
     width: 6rem;
     z-index: -1;
   }
+
+
+
+
+
+  /* responsive */
+
+  @media screen and (max-width: 1113px){
+
+    .profileDesc h3{
+        margin: 0 auto 0.5rem auto;
+    }
+
+    .profileDesc p{
+        font-size: 15px;
+        margin: 0 1rem;
+    }
+
+    .profileContainer{
+        height: 100vh;
+    }
+
+    .profileCollage{
+        height: 100vh;
+    }
+
+    .picDiv1 h3{
+        font-size: 1.2rem;
+        color: white;
+        margin: 1rem 0;
+    }
+
+    .picDiv1 .para1{
+        font-size: 14px;
+    }
+    .picDiv1 .para2{
+        font-size: 14px;
+    }
+    .picDiv1 .para3{
+        font-size: 14px;
+        margin-top: 0;
+        display: none;
+    }
+
+    .profilePics img{
+        width: 90%;
+    }
+
+    .picDiv1 img{
+        width: 125%;
+    }
+    .picDiv2 img{
+        margin-left: 2rem;
+    }
+
+    .picDiv3 img{
+        margin-top: 13rem;
+    }
+
+    .unnamed{
+        bottom: -9%;
+        width: 6rem;
+    }
+
+  }

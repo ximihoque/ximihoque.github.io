@@ -3,7 +3,7 @@
   <!-- <div class="party" (click)="startParty()" class="party">
     <img src="../../../assets/party.png" alt="">
   </div> -->
-  <div class="message">
+  <div class="message" *ngIf="!party">
     <img src="../../../assets/shooting.png" alt="">
     <div>
       <h3>Make a wish and <span (click)="startParty()" style="z-index: 9999;position: relative;cursor: pointer;">Click
@@ -14,8 +14,8 @@
 
   <div class="cardContainer">
 
-    <div class="star1 star">
-      <img class="starImg" src="../../../assets/star.png" alt="">
+    <div class="star1 star" ngDraggable [handle]="star1">
+      <img #star1 class="starImg" id="draggable" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
 
       <div class="cardBg">
@@ -48,8 +48,8 @@
       </div>
 
     </div>
-    <div class="star2 star">
-      <img class="starImg" src="../../../assets/star.png" alt="">
+    <div class="star2 star"  ngDraggable [handle]="star2">
+      <img #star2 class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="cardBg1">
         <div class="flip-card">
@@ -80,8 +80,8 @@
       </div>
     </div>
 
-    <div class="star3 star">
-      <img class="starImg" src="../../../assets/star.png" alt="">
+    <div class="star3 star"  ngDraggable [handle]="star3">
+      <img #star3 class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="cardBg">
         <div class="flip-card">
@@ -112,8 +112,8 @@
       </div>
     </div>
 
-    <div class="star4 star">
-      <img class="starImg" src="../../../assets/star.png" alt="">
+    <div class="star4 star"  ngDraggable [handle]="star4">
+      <img #star4 class="starImg" src="../../../assets/star.png" alt="">
       <img src="../../../assets/beat1.png" class="beat" alt="">
       <div class="cardBg1">
         <div class="flip-card">

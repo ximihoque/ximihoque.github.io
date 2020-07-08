@@ -28,6 +28,7 @@
     "@angular/router": "~7.2.0",
     "@tensorflow/tfjs": "^2.0.1",
     "angular-cli-ghpages": "^0.5.3",
+    "angular2-draggable": "^2.3.2",
     "aos": "^2.3.4",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",

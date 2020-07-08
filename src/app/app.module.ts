@@ -24,7 +24,7 @@ import { CampfireComponent } from './components/campfire/campfire.component';
 import { FireComponent } from './components/fire/fire.component';
 import { FireworkComponent } from './components/firework/firework.component';
 
-
+import { AngularDraggableModule } from 'angular2-draggable';
 
 
 
@@ -41,7 +41,7 @@ import { FireworkComponent } from './components/firework/firework.component';
     CandleComponent,
     CampfireComponent,
     FireComponent,
-    FireworkComponent
+    FireworkComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +52,8 @@ import { FireworkComponent } from './components/firework/firework.component';
     MatCardModule,
     MatIconModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    AngularDraggableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -79,6 +79,10 @@
       {{selectedAnswer}} -->
 
       <img src="../../../assets/calling.webp" alt="" *ngIf="selectedAnswer==1 && selectedQuestion==1" class="calling">
+      <span class="chocoText" style="color: gray;margin-left: 4px;"
+        *ngIf="selectedAnswer==1 && selectedQuestion==1">Hint: You normally
+        eat it</span>
+
       <img src="../../../assets/chocolate.png" alt="" *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling"
         style="border-radius: 3px;margin-top: 1.6rem;">
       <span class="chocoText" *ngIf="selectedQuestion==2 && selectedAnswer==1">This item has been dispatched for you. It

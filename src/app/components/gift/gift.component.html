@@ -54,7 +54,8 @@
         <h3 *ngIf="!formSuccess"> {{
           questionArray[selectedQuestion].heading
           }}</h3>
-        <h3 *ngIf="formSuccess" [ngStyle]="{'font-size': selectedQuestion==2 && selectedAnswer==1 ? '45px' : null}">
+        <h3 *ngIf="formSuccess"
+          [ngStyle]="{'font-size': selectedQuestion==2 && selectedAnswer==1 ? '45px' : null,'margin-top': selectedQuestion==2 && selectedAnswer==1 ? '0' : null}">
           {{
           answerArray[selectedAnswer].question
           }}
@@ -78,7 +79,10 @@
       {{selectedAnswer}} -->
 
       <img src="../../../assets/calling.webp" alt="" *ngIf="selectedAnswer==1 && selectedQuestion==1" class="calling">
-      <img src="../../../assets/chocolate.png" alt="" *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling">
+      <img src="../../../assets/chocolate.png" alt="" *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling"
+        style="border-radius: 3px;margin-top: 1.6rem;">
+      <span class="chocoText" *ngIf="selectedQuestion==2 && selectedAnswer==1">This item has been dispatched for you. It
+        will reach you by 12th of July.</span>
 
 
       <div class="inputContainer" *ngIf="!formSuccess">

@@ -34,7 +34,15 @@
         <span *ngIf="disabelBtn" [ngStyle]="{'visibility': spinning==true ? 'hidden':'visible'}">
           Congratulations!
         </span>
-        <div class="spinner" *ngIf="spinning"></div>
+        <div class="sk-chase" *ngIf="spinning">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+        <!-- <div class="spinner" *ngIf="spinning"></div> -->
       </button>
 
 

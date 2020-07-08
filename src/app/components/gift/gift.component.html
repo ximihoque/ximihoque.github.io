@@ -54,7 +54,7 @@
         <h3 *ngIf="!formSuccess"> {{
           questionArray[selectedQuestion].heading
           }}</h3>
-        <h3 *ngIf="formSuccess">
+        <h3 *ngIf="formSuccess" [ngStyle]="{'font-size': selectedQuestion==2 && selectedAnswer==1 ? '45px' : null}">
           {{
           answerArray[selectedAnswer].question
           }}
@@ -78,8 +78,7 @@
       {{selectedAnswer}} -->
 
       <img src="../../../assets/calling.webp" alt="" *ngIf="selectedAnswer==1 && selectedQuestion==1" class="calling">
-      <img src="../../../assets/chocolate.png" alt="" style="margin-top: -4rem;"
-        *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling">
+      <img src="../../../assets/chocolate.png" alt="" *ngIf="selectedQuestion==2 && selectedAnswer==1" class="calling">
 
 
       <div class="inputContainer" *ngIf="!formSuccess">
@@ -99,7 +98,7 @@
         Just give it to me! 🍫
       </button>
       <span *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" class="placeholder"
-        style="display: block;margin-left: 66px;">That's what she said.</span>
+        style="display: block;margin-left: 66px;margin-top: 6px;">That's what she said.</span>
 
 
     </div>

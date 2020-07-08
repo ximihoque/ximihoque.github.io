@@ -7,9 +7,8 @@
 
       <h3>Let's get You A Gift <img src="../../../assets/gift.png" alt="" class="gift"></h3>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla animi sit eius libero porro similique, a
-        voluptatum ab ea vitae!</p>
-
+      <p>Since you already got yourself a lot of stuff for your birthday. <br>
+        Let’s not make this process any easier for you then.</p>
 
       <div class="slotMachineWrapper">
 
@@ -101,9 +100,11 @@
         Proceed and Next &rarr;
       </button>
 
-      <button *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" (click)="hideGift1()" style="background-color:  #64359f; margin-top: 3rem; border-radius: 12px; font-size: 12px;
+      <button *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" (click)="hideGift1()" style="background-color:  #64359f;
+      font-family: Avenir Heavy;
+      margin-top: 3rem; border-radius: 12px; font-size: 12px;
         padding: 0.8rem 3.6rem;font-weight: bold;">
-        Just give it to me! <span style="box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);">🍫</span>
+        Just give it to me! &nbsp; &nbsp; <span style="box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);"> 🍫</span>
       </button>
       <span *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" class="placeholder"
         style="display: block;margin-left: 66px;margin-top: 6px;">That's what she said.</span>

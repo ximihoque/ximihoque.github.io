@@ -23,11 +23,11 @@
       </div>
 
       <div class="card">
-        <img src={{star.image}} id="img{{i}}" alt="" class="photo" (dblclick)="showPreview(ref)" #ref>
+        <img src={{star.image}} id="img{{i}}" alt="" class="photo" (click)="showPreview(ref)" #ref>
         <div style="display: flex;">
           <p class="heading">{{star.caption}}</p>
-          <img id="3" class="camera" src="../../../assets/pin.png" alt=""
-            style="width:11px !important; height: 12px !important;">
+          <!-- <img id="3" class="camera" src="../../../assets/pin.png" alt="" -->
+            <!-- style="width:11px !important; height: 12px !important;"> -->
         </div>
         <p class="para">{{star.message}}</p>
 
@@ -44,7 +44,7 @@
     [ngClass]="{'heartCome':runRocket}">
 
   <div class="preview" *ngIf="preview">
-    <span class="cross" (click)="hidePreview()">&times;</span>
+    <span class="cross" (click)="hidePreview()">X</span>
     <img src={{imgSrc}} alt="" class="previewImage" (dblclick)="hidePreview()">
     <p class="caption">{{caption}}</p>
     <p class="message">{{message}}</p>

@@ -129,16 +129,18 @@
     border: none;
     color: white;
     border-radius: 5px;
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
+    font-size: 12px;
+    padding: 0.8rem 1.6rem;
     margin-top: 4rem;
     cursor: pointer;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
 }
 
 
 .form .heading{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .formSuccess .heading{
@@ -147,7 +149,7 @@
 }
 
 .form .heading h3{
-    font-size: 3.5rem;
+    font-size: 60px;
     font-weight: lighter;
     transform: scale(.9, 1);
     margin: 0;
@@ -166,6 +168,7 @@
     line-height: 1.5;
     min-height: 10rem;
     white-space: pre-line;
+    font-size: 16px;
 }
 
 .inputContainer{
@@ -189,7 +192,7 @@
 
 .form .placeholder{
     text-align: left;
-    font-size: 12px;
+    font-size: 10px;
     color: gray;
 }
 
@@ -236,7 +239,7 @@ animation: 1s shake linear;
 
 
 
-  /*  */
+/*  */
 /*  */
 /*  */
 

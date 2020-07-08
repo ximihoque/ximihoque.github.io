@@ -94,10 +94,13 @@
         Proceed and Next &rarr;
       </button>
 
-      <button *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" (click)="hideGift1()"
-        style="background-color:  #64359f; margin-top: 3rem;">
-        Just give it to me 🍫
+      <button *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" (click)="hideGift1()" style="background-color:  #64359f; margin-top: 3rem; border-radius: 12px; font-size: 12px;
+        padding: 0.8rem 3.6rem;">
+        Just give it to me! 🍫
       </button>
+      <span *ngIf="formSuccess && selectedQuestion==2 && selectedAnswer==1" class="placeholder"
+        style="display: block;margin-left: 66px;">That's what she said.</span>
+
 
     </div>
 

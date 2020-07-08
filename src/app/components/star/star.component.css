@@ -203,10 +203,10 @@ margin-top: -3.8rem;
 
 .preview{
     position: absolute;
-    width: 30%;
+    width: 25%;
     left: 50%;
     top: 50%;
-    height: 85%;
+    height: 75%;
     transform: translate(-50%,-50%);
     background-color: white;
     padding: 1rem;

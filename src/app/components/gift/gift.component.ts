@@ -34,7 +34,7 @@ export class GiftComponent implements OnInit {
     },
     {
       question: "That was sweet!",
-      answer: "Let's get you a treat for your lips and your family! \nEnjoy this delicious chocolate. You've earned it."
+      answer: "Let's get you a treat for your lips and your family! \n\nEnjoy this delicious chocolate. You've earned it."
     }
 
   ]

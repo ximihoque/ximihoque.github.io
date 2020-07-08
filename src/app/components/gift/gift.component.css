@@ -301,11 +301,11 @@ animation: 1s shake linear;
 
   @media screen and (max-width: 1113px){
   
-    .giftContainer p{
+    /* .giftContainer p{
         font-size: 1rem;
         margin-left: 2rem;
         margin-right: 2rem;
-    }
+    } */
 
     .slotMachine{
         padding: 2.6rem 1.6rem;

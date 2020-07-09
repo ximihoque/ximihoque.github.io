@@ -152,6 +152,8 @@ margin: auto;
       font-size: 11px;
       max-height: 4rem;
       overflow: auto;
+      white-space: pre-line;
+
     }
 
     .cardfront{
@@ -293,3 +295,5 @@ margin: auto;
         }
 
       }
+
+      

@@ -206,7 +206,7 @@ export class StarComponent implements OnInit {
       size: "0.7rem",
       image: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883196/birthday/106606131_632850590656765_3947038971770078240_n_pep7gj.jpg",
       caption: "32nd Avenue",
-      message: "Neha- let's go rest back in the house /nMorvi- you have to check out 32nd Avenue /n Thanks for making me not regret."
+      message: "Neha- let's go rest back in the house \nMorvi- you have to check out 32nd Avenue \n Thanks for making me not regret."
     },
     {
       left: "40%",
@@ -214,7 +214,7 @@ export class StarComponent implements OnInit {
       size: "0.7rem",
       image: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883196/birthday/106606131_632850590656765_3947038971770078240_n_pep7gj.jpg",
       caption: "32nd Avenue",
-      message: "Neha- let's go rest back in the house /nMorvi- you have to check out 32nd Avenue /n Thanks for making me not regret."
+      message: "Neha- let's go rest back in the house \nMorvi- you have to check out 32nd Avenue \n Thanks for making me not regret."
     },
     {
       left: "62%",

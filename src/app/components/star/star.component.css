@@ -93,6 +93,7 @@
     max-height: 4rem;
     overflow: auto;
     color: gray;
+    white-space: pre-line;
     /* font-family: "Avenir Light"; */
 }
 

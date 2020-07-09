@@ -11,7 +11,7 @@ export class FireComponent implements OnInit {
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883186/birthday/106224792_1765059266988574_3940975817755014596_n_osaq5b.jpg",
       caption: "Sleepy me",
-      message: "Morvi- 'I wanted to check how I look when I sleep', /n Neha- in my mind like kumbahkarna"
+      message: "Morvi- 'I wanted to check how I look when I sleep', \n Neha- in my mind like kumbahkarna"
     },
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883187/birthday/106276261_277589786786323_2822046342580465405_n_g73igd.jpg",
@@ -26,7 +26,7 @@ export class FireComponent implements OnInit {
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883194/birthday/106478932_673456783381964_276367747334400738_n_pjiguz.jpg",
       caption: "I am Duck, Prove me wrong.",
-      message: "Morvi- I am bored Neha /nNeha- do your work /nMorvi- nah"
+      message: "Morvi- I am bored Neha \nNeha- do your work \nMorvi- nah"
     },
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883193/birthday/106411978_2867142940078404_8605822912520898775_n_xz7srz.jpg",
@@ -86,14 +86,14 @@ export class FireComponent implements OnInit {
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883187/birthday/106271944_266384517922524_3925634734689576489_n_p7xkxg.jpg",
       caption: "This is it.",
-      message: "Morvi- are you kidding me another blur photograph /n Neha- then stop making such atrocious poses laughing like it was the end of world"
+      message: "Morvi- are you kidding me another blur photograph \nNeha- then stop making such atrocious poses laughing like it was the end of world"
     },
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883185/birthday/106152872_713799459167410_1790251744140314882_n_krfb2d.jpg",
       caption: "Morvi is always on phone",
       message: "The only thing I want monotonous in my life is the time I spent being naive and laughing with you 💕"
     },
-    
+
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883194/birthday/106478595_981389225631630_8542854557189072864_n_bp5z3m.jpg",
       caption: "I look good in bindi, hanna ?!!",
@@ -102,7 +102,7 @@ export class FireComponent implements OnInit {
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883204/birthday/107257175_2720023084886457_826086073716824310_n_b3cc5w.jpg",
       caption: "So how do you like that?",
-      message: "Morvi- don't you dare post it bitch /n Neha- muhahahahha"
+      message: "Morvi- don't you dare post it bitch \n Neha- muhahahahha"
     },
     {
       imgage: "https://res.cloudinary.com/dz25nxnkr/image/upload/v1593883192/birthday/106424490_311370023334413_1106514445620036987_n_jzdefv.jpg",

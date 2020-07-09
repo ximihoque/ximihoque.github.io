@@ -187,9 +187,10 @@ export class FireComponent implements OnInit {
   changeContent(f) {
     this.rotate = 'e'
     let id = f.id * 1;
-    let r1 = Math.floor(Math.random() * 49);
+    let r1 = Math.floor(Math.random() * 20);
 
     setTimeout(() => this.cardContent[id] = this.stars[r1], 1000);
+    // console.log(this.cardContent)
     // setTimeout(() => this.rotate = 'e', 1500);
 
 
